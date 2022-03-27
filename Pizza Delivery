@@ -1,0 +1,62 @@
+#First without optimizing code = Still worked!!!
+pizza = input("Small Pizza:S, Medium Pizza:M & Large Pizza:L: ")
+
+if pizza == "S":
+    Bill = 15
+    Pepperoni = input ("Extra Pepperoni Y or N: ")
+    Cheese = input ("Extra Cheese Y or N: ")
+    if Pepperoni == "Y":
+        Bill +=2
+        if Cheese == "Y":
+            Bill +=1
+    print (f"Your bill is $ {Bill}")
+elif pizza == "M":
+    Bill = 20
+    Pepperoni = input ("Extra Pepperoni Y or N: ")
+    Cheese = input ("Extra Cheese Y or N: ")
+    if Pepperoni == "Y":
+        Bill +=2
+        if Cheese == "Y":
+            Bill +=1
+    print (f"Your bill is $ {Bill}")
+elif pizza == "L":
+    Bill = 25
+    Pepperoni = input ("Extra Pepperoni Y or N: ")
+    Cheese = input ("Extra Cheese Y or N: ")
+    if Pepperoni == "Y":
+        Bill +=2
+        if Cheese == "Y":
+            Bill +=1
+    print (f"Your bill is ${Bill}: ")
+else:   
+    print ("wrong command"
+#Optimized code
+if pizza == "S":
+    Bill = 15
+    Pepperoni = input ("Extra Pepperoni Y or N: ")
+    Cheese = input ("Extra Cheese Y or N: ")
+    if Pepperoni == "Y":
+        Bill +=2
+        if Cheese == "Y":
+            Bill +=1
+    print (f"Your bill is $ {Bill}")
+elif pizza == "M":
+    Bill = 20
+    Pepperoni = input ("Extra Pepperoni Y or N: ")
+    Cheese = input ("Extra Cheese Y or N: ")
+    if Pepperoni == "Y":
+        Bill +=2
+        if Cheese == "Y":
+            Bill +=1
+    print (f"Your bill is $ {Bill}")
+elif pizza == "L":
+    Bill = 25
+    Pepperoni = input ("Extra Pepperoni Y or N: ")
+    Cheese = input ("Extra Cheese Y or N: ")
+    if Pepperoni == "Y":
+        Bill +=2
+        if Cheese == "Y":
+            Bill +=1
+    print (f"Your bill is ${Bill}: ")
+else:   
+    print ("wrong command"
