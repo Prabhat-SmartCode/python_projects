@@ -1,0 +1,27 @@
+#ideal way
+year = int(input ("Puy the year in XXXX format "))
+if year % 4 == 0:
+    if year % 100 == 0:
+        if year % 400 == 0:
+            print ("Leap year")
+        else:
+            print ("Not Leap year")
+    else:
+        print (" Not Leap year")
+else:
+    print ("Not Leap year")
+
+#How I made leap year formula
+year = int(input ("Puy the year in XXXX format "))
+
+if year % 4 != 0:
+    Print ("Not Leap year")
+else:
+    if year % 400 == 0:
+        print ("leap year")
+    elif year % 100 == 0:
+        print ("Not leap year")
+    elif year % 4 == 0:
+        print ("leap year")
+    else:
+        print ("Not Leap year")
