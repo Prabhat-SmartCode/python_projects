@@ -1,0 +1,24 @@
+#Under 18.5 they are underweight
+#Over 18.5 but below 25 they have a normal weight
+#Over 25 but below 30 they are slightly overweight
+#Over 30 but below 35 they are obese
+#Above 35 they are clinically obese.
+
+weight = input ("weight in Kgs: ")
+weight_int = int (weight)
+height = input ("height in ms: ")
+height_flt = float (height)
+bmi = weight_int/(height_flt**2)
+bmi_round = round (bmi, 3)
+print ("Your BMI is: " + str(bmi_round))
+
+if bmi_round < 18.5:
+    print ("Your BMI is in category underweight")
+elif bmi_round < 25:
+    print ("Your BMI is in category normal weight")
+elif bmi_round < 30:
+    print ("Your BMI is in category slightly overweight")
+elif bmi_round < 35:
+    print ("Your BMI is in category obese")
+else:
+    print ("Your BMI is in category clinically obese")
