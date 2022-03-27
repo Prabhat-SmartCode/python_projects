@@ -1,0 +1,14 @@
+height = input ("Height in cms: ")
+height_int = int(height)
+if height_int> 120:
+    print ("Eigible")
+    age = input ("what is your age: ")
+    age_int = int(age)
+    if age_int < 12:
+        print ("pay 5")
+    elif age_int <= 18:
+        print ("pay 10")
+    else:
+        print ("pay 15")
+else:
+    print ("Not eligible")
