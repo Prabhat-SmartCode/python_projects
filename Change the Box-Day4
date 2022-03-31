@@ -1,0 +1,28 @@
+row1 = ["⬜️","⬜️","⬜️"]
+row2 = ["⬜️","⬜️","⬜️"]
+row3 = ["⬜️","⬜️","⬜️"]
+map = [row1, row2, row3]
+print(f"{row1}\n{row2}\n{row3}")
+position = input("Where do you want to put the treasure? ")
+pos_in = position
+
+if pos_in[0] == "1":
+    newRow = row1
+elif pos_in[0] == "2":
+    newRow = row2
+elif pos_in[0] == "3":
+    newRow = row3
+else:
+    print ("NA")
+
+if pos_in[1] == "1":
+    newCol = 0
+elif pos_in[1] == "2":
+    newCol = 1
+elif pos_in[1] == "3":
+    newCol = 2
+else:
+    print ("NA")
+
+newRow[newCol] = " x"
+print(f"{row1}\n{row2}\n{row3}")
